@@ -1,0 +1,146 @@
+
+$color-principal: #734d26;
+$color-secundario:#eacda3;
+$font-size: 2rem;
+
+
+
+@import "general";
+@import "inputs";
+@import "header";
+@import "footer";
+@import "index";
+@import "responsive";
+@import "titulos";
+
+.DropdownMenu{
+    font-size: 1.5rem;
+}
+.Dropdown_color{
+    color: black;
+}
+.Dropdown_opciones{
+    font-size: 1.5rem;
+}
+
+/* GRIDS */
+.PadreFooter{
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 25px;
+    justify-items: center;
+    justify-content: center;
+}
+/* PAGINA NOSOTROS */
+
+.ContenedorNosotros{
+    display: flex;
+    flex-direction: column;
+}
+.PadreForm{
+    width: 400px;
+font-size: 2rem;
+}
+.HijoForm{
+    height: 75px;
+    width: 350px;
+    padding: 15px;
+}
+
+.MainNosotros{
+    background: $color-secundario;
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.HijoNosotros{
+    width: 100%;
+    padding: 20px;
+    p{
+    font-size: 2rem;
+    }
+    
+}
+.FooterNosotros{
+    background-color: $color-principal;
+    height: 100px;
+}
+.TituloRegistrarse{
+    font-size: 2.5rem;
+}
+
+
+/* PAGINA SALADAS */
+.mainPaginas{
+    display:flex;
+    flex-direction: column;
+    background: $color-secundario;
+    height: 650px;
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .ImgRecetas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        img{
+            width: 30rem;
+            height: 30rem;
+            border: #604020 solid;
+            border-radius: 10px;
+        }
+    }
+}
+.Btn-primary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .btn-primary{
+        width: 150px;
+        height: 60px;
+        padding: 10px;
+    }
+}
+
+
+.NombresComidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    margin: 15px 15px;
+    padding:15px 15px;}
+
+.modal-header{
+    background-color: $color-principal;
+}
+.Buton{
+    font-size: 1.5rem;
+    background-color: #604020;
+}
+
+.Tarjeta{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10px;
+    border:$color-principal;
+font-size: 1.5rem;
+}
+.btn-primary{
+    font-size: 1.5rem;
+    height: 60px;
+    width: 150px;
+    background-color:  $color-principal;
+}
+.cardCursos{
+    padding: 10px;
+justify-content: space-evenly;
+}
+
+.btn-primary2{
+    font-size: 1.5rem;
+    height: 30px;
+    width: 100px;
+    background-color:  $color-principal;
+    margin: 10px;
+}

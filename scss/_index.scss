@@ -1,0 +1,56 @@
+.main{
+    background: $color-secundario;
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.ContenedorMain{
+    display: flex;
+    flex-direction: column;
+}
+/*imagenes*/
+.Contenedor1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+video{
+    border: #604020 solid ;
+    border-radius: 10px;
+    margin: 15px 15px;
+}
+.Contenedor2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navImagenes{
+    background-color:  	 $color-principal;
+    color: white;
+    font-size: $font-size;
+    padding: 30px;
+    margin: 30px;
+}
+.Imagenescomidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    img{
+        width: 250px;
+        height: 250px;
+        border: #604020 solid;
+        border-radius: 10px;
+    }
+}
+
+.titulosComidas{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin: 15px ;
+    padding:15px ;
+    &:hover{
+        transform: translate(10px, 10px);
+    }
+}

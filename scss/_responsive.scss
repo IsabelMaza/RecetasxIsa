@@ -1,0 +1,142 @@
+/*RESPONSIVE NOSOTROS*/
+@media only screen and (max-width: 320px){
+    .ContenedorNosotros{
+        display: flex;
+        flex-direction: column;
+        .HijoNosotros{
+            p{
+                font-size: 1.5rem;
+            }
+            h1{
+                font-size: 3rem;
+            }
+            .Mapa{
+                width: 200px;
+                height: 150px;
+            }
+        }
+        .PadreForm{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .ContenedorNosotros{
+        display: flex;
+        flex-direction: column;
+        .HijoNosotros{
+            p{
+                font-size: 2rem;
+            }
+            h1{
+                font-size: 3.5rem;
+            }
+            .Mapa{
+                width: 350px;
+                height: 250px;
+            }
+        }
+        .PadreForm{
+            font-size: 2rem;
+        }
+    }
+}
+/*RESPONSIVE PAGINAS*/
+
+@media only screen and (max-width: 320px) {
+    main{
+        height: 1200px
+    }
+    .mainPaginas{
+        display: flex;
+        flex-direction: column;
+        .TitulosPaginas{
+            font-size: 3rem;
+        }
+        .FotosPaginas{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            .imgRecetas{
+                height: 90px;
+                width: 90px;
+                margin: 10px;
+                border: $color-principal solid;
+            }
+    }
+    .Btn-primary{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .btn-primary{
+            height: 40px;
+            width: 100px;
+            font-size: 0.7rem;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .mainPaginas{
+    h1{
+        font-size: 4rem;
+    }
+    .ImgRecetas{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        .imgRecetas{
+            height: 200px;
+            width: 200px;
+        }
+    }
+} 
+
+}
+
+/* RESPONSIVE INDEX*/
+@media only screen and (max-width: 768px){
+    .navImagenes{
+        display: flex;
+        flex-direction: row;
+        height: 170px;
+        width: 800px;
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        .titulosComidas{
+            font-size: 2.5rem;
+        }
+    }
+    }
+
+@media only screen and (max-width: 320px){
+    .video{
+        height: 200px;
+        width: 250px;
+    }
+    .navImagenes{
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        .ImagenesComidas{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .TitulosB{
+        font-size: 2rem;
+    }
+}
+
+
+

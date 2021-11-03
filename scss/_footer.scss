@@ -1,0 +1,15 @@
+// /*footer*/
+.piedePagina{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    background-color:$color-principal ;
+    font-size: 2rem;
+    text-align: right;
+}
+
+
+.colorDeLogo{
+    color: white;
+}

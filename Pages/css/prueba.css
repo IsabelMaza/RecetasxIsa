@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&family=Yaldevi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Koh Santepheap', cursive;
+  font-family: 'Yaldevi', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+.body {
+  background: #eacda3;
+  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6ae7b, #eacda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif; }
+
+.inputE {
+  transition: 2s;
+  width: 100px;
+  height: 20px; }
+  .inputE:focus {
+    width: 150px;
+    height: 35px;
+    font-size: 22px;
+    background-color: lightgray; }
+
+header {
+  background-color: #734d26;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 10px; }
+
+.piedePagina {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  background-color: #734d26;
+  font-size: 2rem;
+  text-align: right; }
+
+.colorDeLogo {
+  color: white; }
+
+.main {
+  background: #eacda3;
+  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6ae7b, #eacda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.ContenedorMain {
+  display: flex;
+  flex-direction: column; }
+
+/*imagenes*/
+.Contenedor1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+video {
+  border: #604020 solid;
+  border-radius: 10px;
+  margin: 15px 15px; }
+
+.Contenedor2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.navImagenes {
+  background-color: #734d26;
+  color: white;
+  font-size: 2rem;
+  padding: 30px;
+  margin: 30px; }
+
+.Imagenescomidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .Imagenescomidas img {
+    width: 250px;
+    height: 250px;
+    border: #604020 solid;
+    border-radius: 10px; }
+
+.titulosComidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  margin: 15px;
+  padding: 15px; }
+  .titulosComidas:hover {
+    transform: translate(10px, 10px); }
+
+/*RESPONSIVE NOSOTROS*/
+@media only screen and (max-width: 320px) {
+  .ContenedorNosotros {
+    display: flex;
+    flex-direction: column; }
+    .ContenedorNosotros .HijoNosotros p {
+      font-size: 1.5rem; }
+    .ContenedorNosotros .HijoNosotros h1 {
+      font-size: 3rem; }
+    .ContenedorNosotros .HijoNosotros .Mapa {
+      width: 200px;
+      height: 150px; }
+    .ContenedorNosotros .PadreForm {
+      font-size: 2rem; } }
+
+@media only screen and (max-width: 768px) {
+  .ContenedorNosotros {
+    display: flex;
+    flex-direction: column; }
+    .ContenedorNosotros .HijoNosotros p {
+      font-size: 2rem; }
+    .ContenedorNosotros .HijoNosotros h1 {
+      font-size: 3.5rem; }
+    .ContenedorNosotros .HijoNosotros .Mapa {
+      width: 350px;
+      height: 250px; }
+    .ContenedorNosotros .PadreForm {
+      font-size: 2rem; } }
+
+/*RESPONSIVE PAGINAS*/
+@media only screen and (max-width: 320px) {
+  main {
+    height: 1200px; }
+  .mainPaginas {
+    display: flex;
+    flex-direction: column; }
+    .mainPaginas .TitulosPaginas {
+      font-size: 3rem; }
+    .mainPaginas .FotosPaginas {
+      display: flex;
+      flex-direction: column;
+      padding: 10px; }
+      .mainPaginas .FotosPaginas .imgRecetas {
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+        border: #734d26 solid; }
+    .mainPaginas .Btn-primary {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .mainPaginas .Btn-primary .btn-primary {
+        height: 40px;
+        width: 100px;
+        font-size: 0.7rem;
+        padding: 10px;
+        margin: 10px; } }
+
+@media only screen and (max-width: 768px) {
+  .mainPaginas h1 {
+    font-size: 4rem; }
+  .mainPaginas .ImgRecetas {
+    display: flex;
+    flex-direction: row;
+    padding: 10px; }
+    .mainPaginas .ImgRecetas .imgRecetas {
+      height: 200px;
+      width: 200px; } }
+
+/* RESPONSIVE INDEX*/
+@media only screen and (max-width: 768px) {
+  .navImagenes {
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    width: 800px; }
+    .navImagenes img {
+      width: 120px;
+      height: 120px; }
+    .navImagenes .titulosComidas {
+      font-size: 2.5rem; } }
+
+@media only screen and (max-width: 320px) {
+  .video {
+    height: 200px;
+    width: 250px; }
+  .navImagenes {
+    display: flex;
+    flex-direction: column;
+    padding: 35px; }
+    .navImagenes .ImagenesComidas {
+      width: 40px;
+      height: 40px; }
+  .TitulosB {
+    font-size: 2rem; } }
+
+/*Titulos*/
+.Titulos {
+  font-size: 2rem;
+  font-family: 'Koh Santepheap', cursive;
+  font-family: 'Yaldevi', sans-serif; }
+
+.TitulosE {
+  color: white; }
+
+.TitulosB {
+  color: black;
+  font-size: 4.5rem; }
+
+h3 {
+  color: #eacda3; }
+
+.pTitulo {
+  color: black; }
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  padding: 10px 10px; }
+
+.TitulosPaginas {
+  background-color: #eacda3; }
+
+.colorDeTitulo {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Nunito', sans-serif; }
+
+.contacto {
+  display: inline-block;
+  color: black;
+  text-decoration: none; }
+
+.EfectodeLink:hover {
+  display: inline-block;
+  transition: 0.4s;
+  color: #eacda3; }
+
+.DropdownMenu {
+  font-size: 1.5rem; }
+
+.Dropdown_color {
+  color: black; }
+
+.Dropdown_opciones {
+  font-size: 1.5rem; }
+
+/* GRIDS */
+.PadreFooter {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 25px;
+  justify-items: center;
+  justify-content: center; }
+
+/* PAGINA NOSOTROS */
+.ContenedorNosotros {
+  display: flex;
+  flex-direction: column; }
+
+.PadreForm {
+  width: 400px;
+  font-size: 2rem; }
+
+.HijoForm {
+  height: 75px;
+  width: 350px;
+  padding: 15px; }
+
+.MainNosotros {
+  background: #eacda3;
+  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6ae7b, #eacda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.HijoNosotros {
+  width: 100%;
+  padding: 20px; }
+  .HijoNosotros p {
+    font-size: 2rem; }
+
+.FooterNosotros {
+  background-color: #734d26;
+  height: 100px; }
+
+.TituloRegistrarse {
+  font-size: 2.5rem; }
+
+/* PAGINA SALADAS */
+.mainPaginas {
+  display: flex;
+  flex-direction: column;
+  background: #eacda3;
+  height: 650px;
+  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6ae7b, #eacda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .mainPaginas .ImgRecetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .mainPaginas .ImgRecetas img {
+      width: 30rem;
+      height: 30rem;
+      border: #604020 solid;
+      border-radius: 10px; }
+
+.Btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .Btn-primary .btn-primary {
+    width: 150px;
+    height: 60px;
+    padding: 10px; }
+
+.NombresComidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  margin: 15px 15px;
+  padding: 15px 15px; }
+
+.modal-header {
+  background-color: #734d26; }
+
+.Buton {
+  font-size: 1.5rem;
+  background-color: #604020; }
+
+.Tarjeta {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10px;
+  border: #734d26;
+  font-size: 1.5rem; }
+
+.btn-primary {
+  font-size: 1.5rem;
+  height: 60px;
+  width: 150px;
+  background-color: #734d26; }
+
+.cardCursos {
+  padding: 10px;
+  justify-content: space-evenly; }
+
+.btn-primary2 {
+  font-size: 1.5rem;
+  height: 30px;
+  width: 100px;
+  background-color: #734d26;
+  margin: 10px; }

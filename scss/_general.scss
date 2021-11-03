@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&family=Yaldevi&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koh Santepheap', cursive;
+    font-family: 'Yaldevi', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+.body{
+    background: $color-secundario;
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: $font-size;
+    font-family: 'Rubik', sans-serif;
+
+}
