@@ -1,7 +1,7 @@
 .inputE{
     transition: 2s;
     width: 100px;
-    height: 20px;
+    height: 40px;
     &:focus{
         width: 150px;
         height: 35px;
@@ -9,4 +9,8 @@
         background-color: lightgray;
     }
     
+}
+.Botonenviar{
+    height: 60px;
+    width: 80px;
 }

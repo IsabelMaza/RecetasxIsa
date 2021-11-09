@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark header">
             <div class="container-fluid">
-                <a class="navbar-brand Titulos" href="#">MENÚ</a>
+                <a class="navbar-brand Titulos" href="../index.html">MENÚ</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -33,7 +33,6 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark DropdownMenu"
                                 aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item  Dropdowncolor" href="../index.html">Inicio</a></li>
                                 <li><a class="dropdown-item  Dropdowncolor" href="../Pages/nosotros.html">Nosotros</a></li>
                                 <li><a class="dropdown-item Dropdowncolor" href="../Pages/dulces.html">Recetas Dulces</a>
                                 </li>
@@ -52,7 +51,7 @@
         <div class="ContenedorNosotros">
             <div class="HijoNosotros">
                 <h1>Nosotros</h1>
-                <p >Detrás de este abanico de riquísimas recetas para acompañar con tus personas más queridas o tan solo delirar
+                <p>Detrás de este abanico de riquísimas recetas para acompañar con tus personas más queridas o tan solo delirar
                     a tu paladar me encuentro yo, Isabel Maza. Actualmente viviendo en Buenos Aires, estudiante de Arquitectura
                     en la UBA. Oriunda de Trelew, Chubut, sur de la Patagonia, en donde comenzó la recolección de estas
                     maravillosas recetas. Cada una cuenta con mucho amor, estas delicias acompañaron grandes celebraciones en
@@ -60,55 +59,49 @@
                     en lindos y excepcionales momentos. Espero las disfruten!</p>
                 <iframe class="Mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940009.809723786!2d-70.12856002488954!3d-43.97791263204442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde2a3c6a2577047%3A0xdad4458e4b26a228!2sChubut!5e0!3m2!1ses-419!2sar!4v1632343705455!5m2!1ses-419!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    width="400" height="300" style="border:0;" class="Mapa" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
             <hr>
-            <form class="row PadreForm g-3">
-                <h2 class="TituloRegistrarse">Registrate</h2>
-                <div class="col-md-6 HijoForm">
-                    <label for="inputEmail4" class="form-label">Nombre</label>
-                    <input type="name" class="form-control inputE" id="inputEmail4" placeholder="Ingrese su primer nombre">
-                </div>
-                <div class="col-md-6 HijoForm">
-                    <label for="inputPassword4" class="form-label">Apellido</label>
-                    <input type="surname" class="form-control inputE" id="inputPassword4" placeholder="Ingrese su apellido">
-                </div>
-                <div class="col-md-6 HijoForm">
-                    <label for="inputCity" class="form-label">Fecha de nacimiento</label>
-                    <input type="text" class="form-control inputE" id="inputCity" placeholder="ej:11/05/1987">
-                </div>
-                <div class="col-12 HijoForm">
-                    <label for="inputAddress" class="form-label">Localidad</label>
-                    <input type="text" class="form-control inputE" id="inputAddress" placeholder="Ingrese su localidad">
-                </div>
-                <div class="col-md-4 HijoForm">
-                    <label for="inputState" class="form-label">Provincia</label>
-                    <select id="inputState" class="form-select inputE">
-                        <option selected>ej:Santa Cruz</option>
-                        <option>Córdoba</option>
-                        <option>Chubut</option>
-                        <option>La Pampa</option>
-                        <option>Entre Ríos</option>
-                        <option>Salta</option>
-                    </select>
-                </div>
-                <div class="col-md-2 HijoForm">
-                    <label for="inputZip" class="form-label">Código de área</label>
-                    <input type="text" class="form-control inputE" id="inputZip">
-                </div>
-                <div class="col-12 HijoForm">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Estoy de acuerdo con los términos y condiciones
-                        </label>
+            <div class="Formulario">
+                <form class="row gy-2 gx-3 align-items-center ">
+                    <h2>Registrarse</h2>
+                    <div class="col-auto">
+                        <h4>Nombre y apellido</h4>
+                        <label class="visually-hidden" for="autoSizingInput">Nombre y apellido</label>
+                        <input type="text" class="form-control inputE" id="autoSizingInput" placeholder="Jane Doe">
                     </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary2">Enviar</button>
-                </div>
-            </form>
+                    <div class="col-auto">
+                        <h4>Nombre de usuario</h4>
+                        <label class="visually-hidden" for="autoSizingInputGroup">Nombre de usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control inputE" id="autoSizingInputGroup"
+                                placeholder="Nombre de usuario">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <h4>Recibir notificaciones sobre nuevas recetas</h4>
+                        <label class="visually-hidden" for="autoSizingSelect">Recibir notificaciones sobre mas recetas</label>
+                        <select class="form-select" id="autoSizingSelect">
+                            <option selected>...</option>
+                            <option value="1">Sí</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                                Recordarme
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary Botonenviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <footer id="pie" class="piedePagina PadreFooter">
         </footer>

@@ -3,6 +3,7 @@
     .ContenedorNosotros{
         display: flex;
         flex-direction: column;
+        height: 2000px;
         .HijoNosotros{
             p{
                 font-size: 1.5rem;
@@ -10,10 +11,10 @@
             h1{
                 font-size: 3rem;
             }
-            .Mapa{
-                width: 200px;
-                height: 150px;
-            }
+        }
+        .Mapa{
+            width: 150px;
+            height: 100px;
         }
         .PadreForm{
             font-size: 2rem;
@@ -45,6 +46,24 @@
 }
 /*RESPONSIVE PAGINAS*/
 
+@media only screen and (max-width: 768px) {
+    .mainPaginas{
+    h1{
+        font-size: 4rem;
+    }
+    .ImgRecetas{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        .imgRecetas{
+            height: 200px;
+            width: 200px;
+        }
+    }
+} 
+
+}
+
 @media only screen and (max-width: 320px) {
     main{
         height: 1200px
@@ -59,11 +78,14 @@
             display: flex;
             flex-direction: column;
             padding: 10px;
-            .imgRecetas{
-                height: 90px;
-                width: 90px;
-                margin: 10px;
-                border: $color-principal solid;
+            .ImgRecetas{
+
+                .imgRecetas{
+                    height: 50px;
+                    width: 50px;
+                    margin: 10px;
+                    border: $color-principal solid;
+                }
             }
     }
     .Btn-primary{
@@ -84,30 +106,12 @@
 
 
 
-@media only screen and (max-width: 768px) {
-    .mainPaginas{
-    h1{
-        font-size: 4rem;
-    }
-    .ImgRecetas{
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
-        .imgRecetas{
-            height: 200px;
-            width: 200px;
-        }
-    }
-} 
-
-}
 
 /* RESPONSIVE INDEX*/
 @media only screen and (max-width: 768px){
     .navImagenes{
         display: flex;
         flex-direction: row;
-        height: 170px;
         width: 800px;
         img{
             width: 120px;
@@ -124,13 +128,23 @@
         height: 200px;
         width: 250px;
     }
-    .navImagenes{
+    .ContenedorMain{
         display: flex;
         flex-direction: column;
-        padding: 35px;
-        .ImagenesComidas{
-            width: 40px;
-            height: 40px;
+    .Contenedor1{
+        height: 400px;
+        width: 300px;
+    }
+        .Contenedor2{
+            padding: 35px;
+            .navImagenes{
+                display: flex;
+                flex-direction: column;
+            }
+            .ImagenesComidas{
+                width: 100px;
+                height: 700px;
+            }
         }
     }
     .TitulosB{
