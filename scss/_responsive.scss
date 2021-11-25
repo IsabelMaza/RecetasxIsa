@@ -1,35 +1,19 @@
 /*RESPONSIVE NOSOTROS*/
-@media only screen and (max-width: 320px){
-    .ContenedorNosotros{
-        display: flex;
-        flex-direction: column;
-        height: 2000px;
-        .HijoNosotros{
-            p{
-                font-size: 1.5rem;
-            }
-            h1{
-                font-size: 3rem;
-            }
-        }
-        .Mapa{
-            width: 150px;
-            height: 100px;
-        }
-        .PadreForm{
-            font-size: 2rem;
-        }
-    }
-}
 
 
 @media only screen and (max-width:768px){
+    .MainNosotros{
+        width: 775px;
+        height: 800px;
+    }
     .ContenedorNosotros{
         display: flex;
         flex-direction: column;
+        height:800px ;
         .HijoNosotros{
             p{
                 font-size: 2rem;
+                width: 700px;
             }
             h1{
                 font-size: 3.5rem;
@@ -39,12 +23,71 @@
                 height: 250px;
             }
         }
-        .PadreForm{
-            font-size: 2rem;
+        .Formulario{
+            .col-auto{
+                font-size: 1.5rem;
+                width: 120px;
+                height: 20px;
+                padding: 10px;
+            }
+
         }
     }
+    .PadreFooter{
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .MainNosotros{
+        width: 330px;
+        height: 1050px;
+    }
+    .ContenedorNosotros{
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+        width: 320px;
+        .HijoNosotros{
+            p{
+                font-size: 1.4rem;
+                width: 300px;
+                padding-right: 10px;
+            }
+            h1{
+                font-size: 3rem;
+                height: 50px;
+                width: 320px;
+            }
+            width: 600px;
+            .Mapa{
+                width: 200px;
+                height: 150px;
+            }
+        }
+        .Formulario{
+            flex-direction: column;
+            font-size: 0.2rem;
+            h4{
+                font-size: 1.6rem;
+            }
+            .form-check-label{
+                font-size: 1.6rem;
+            }
+            .col-auto{
+                font-size: 1.8rem;
+                width:170px;
+                height: 70px;
+                padding: 10px;
+            }
+            .inputE{
+                height: 30px;
+                width:100px;
+            }
+    }
+}
 }
 /*RESPONSIVE PAGINAS*/
+
 
 @media only screen and (max-width: 768px) {
     .mainPaginas{
@@ -60,43 +103,39 @@
             width: 200px;
         }
     }
-} 
-
+    } 
 }
 
 @media only screen and (max-width: 320px) {
     main{
-        height: 1200px
+        height: 1200px;
+        width: 320px;
     }
     .mainPaginas{
         display: flex;
         flex-direction: column;
         .TitulosPaginas{
             font-size: 3rem;
-        }
-        .FotosPaginas{
+        } 
+        .ImgRecetas{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             padding: 10px;
-            .ImgRecetas{
-
                 .imgRecetas{
-                    height: 50px;
-                    width: 50px;
-                    margin: 10px;
+                    height: 100px;
+                    width: 100px;
+                    margin: 5px;
                     border: $color-principal solid;
-                }
-            }
+        }
     }
     .Btn-primary{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-
         .btn-primary{
-            height: 40px;
+            height: 60px;
             width: 100px;
-            font-size: 0.7rem;
+            font-size: 1rem;
             padding: 10px;
             margin: 10px;
         }
@@ -106,51 +145,57 @@
 
 
 
-
 /* RESPONSIVE INDEX*/
 @media only screen and (max-width: 768px){
     .navImagenes{
         display: flex;
         flex-direction: row;
-        width: 800px;
+        width: 750px;
+        height: 200px;
         img{
-            width: 120px;
-            height: 120px;
+            width: 115px;
+            height: 115px;
         }
         .titulosComidas{
             font-size: 2.5rem;
         }
     }
-    }
+}
 
 @media only screen and (max-width: 320px){
     .video{
         height: 200px;
-        width: 250px;
+        width: 300px;
+        margin-left: 90px;
     }
     .ContenedorMain{
         display: flex;
         flex-direction: column;
+        width: 320px;
     .Contenedor1{
-        height: 400px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
+        left: 20px;
     }
         .Contenedor2{
-            padding: 35px;
+            padding: 20px;
             .navImagenes{
                 display: flex;
                 flex-direction: column;
+                height: 750px;
+                width: 450px;
+                img{
+                    height: 125px;
+                    width: 125px;
+                }
             }
             .ImagenesComidas{
-                width: 100px;
-                height: 700px;
+                width: 150px;
+                height: 150px;
             }
         }
-    }
-    .TitulosB{
-        font-size: 2rem;
+        .TitulosB{
+            font-size: 3rem;
+        }
     }
 }
-
-
-

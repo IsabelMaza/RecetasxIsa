@@ -21,12 +21,16 @@ html {
 .inputE {
   transition: 2s;
   width: 100px;
-  height: 20px; }
+  height: 40px; }
   .inputE:focus {
     width: 150px;
     height: 35px;
     font-size: 22px;
     background-color: lightgray; }
+
+.Botonenviar {
+  height: 60px;
+  width: 80px; }
 
 header {
   background-color: #734d26;
@@ -38,7 +42,7 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 10%;
+  height: 30px;
   background-color: #734d26;
   font-size: 2rem;
   text-align: right; }
@@ -102,63 +106,69 @@ video {
     transform: translate(10px, 10px); }
 
 /*RESPONSIVE NOSOTROS*/
-@media only screen and (max-width: 320px) {
-  .ContenedorNosotros {
-    display: flex;
-    flex-direction: column; }
-    .ContenedorNosotros .HijoNosotros p {
-      font-size: 1.5rem; }
-    .ContenedorNosotros .HijoNosotros h1 {
-      font-size: 3rem; }
-    .ContenedorNosotros .HijoNosotros .Mapa {
-      width: 200px;
-      height: 150px; }
-    .ContenedorNosotros .PadreForm {
-      font-size: 2rem; } }
-
 @media only screen and (max-width: 768px) {
+  .MainNosotros {
+    width: 775px;
+    height: 800px; }
   .ContenedorNosotros {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 800px; }
     .ContenedorNosotros .HijoNosotros p {
-      font-size: 2rem; }
+      font-size: 2rem;
+      width: 700px; }
     .ContenedorNosotros .HijoNosotros h1 {
       font-size: 3.5rem; }
     .ContenedorNosotros .HijoNosotros .Mapa {
       width: 350px;
       height: 250px; }
-    .ContenedorNosotros .PadreForm {
-      font-size: 2rem; } }
+    .ContenedorNosotros .Formulario .col-auto {
+      font-size: 1.5rem;
+      width: 120px;
+      height: 20px;
+      padding: 10px; }
+  .PadreFooter {
+    height: 30px; } }
+
+@media only screen and (max-width: 320px) {
+  .MainNosotros {
+    width: 330px;
+    height: 1050px; }
+  .ContenedorNosotros {
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+    width: 320px; }
+    .ContenedorNosotros .HijoNosotros {
+      width: 600px; }
+      .ContenedorNosotros .HijoNosotros p {
+        font-size: 1.4rem;
+        width: 300px;
+        padding-right: 10px; }
+      .ContenedorNosotros .HijoNosotros h1 {
+        font-size: 3rem;
+        height: 50px;
+        width: 320px; }
+      .ContenedorNosotros .HijoNosotros .Mapa {
+        width: 200px;
+        height: 150px; }
+    .ContenedorNosotros .Formulario {
+      flex-direction: column;
+      font-size: 0.2rem; }
+      .ContenedorNosotros .Formulario h4 {
+        font-size: 1.6rem; }
+      .ContenedorNosotros .Formulario .form-check-label {
+        font-size: 1.6rem; }
+      .ContenedorNosotros .Formulario .col-auto {
+        font-size: 1.8rem;
+        width: 170px;
+        height: 70px;
+        padding: 10px; }
+      .ContenedorNosotros .Formulario .inputE {
+        height: 30px;
+        width: 100px; } }
 
 /*RESPONSIVE PAGINAS*/
-@media only screen and (max-width: 320px) {
-  main {
-    height: 1200px; }
-  .mainPaginas {
-    display: flex;
-    flex-direction: column; }
-    .mainPaginas .TitulosPaginas {
-      font-size: 3rem; }
-    .mainPaginas .FotosPaginas {
-      display: flex;
-      flex-direction: column;
-      padding: 10px; }
-      .mainPaginas .FotosPaginas .imgRecetas {
-        height: 90px;
-        width: 90px;
-        margin: 10px;
-        border: #734d26 solid; }
-    .mainPaginas .Btn-primary {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly; }
-      .mainPaginas .Btn-primary .btn-primary {
-        height: 40px;
-        width: 100px;
-        font-size: 0.7rem;
-        padding: 10px;
-        margin: 10px; } }
-
 @media only screen and (max-width: 768px) {
   .mainPaginas h1 {
     font-size: 4rem; }
@@ -170,32 +180,76 @@ video {
       height: 200px;
       width: 200px; } }
 
+@media only screen and (max-width: 320px) {
+  main {
+    height: 1200px;
+    width: 320px; }
+  .mainPaginas {
+    display: flex;
+    flex-direction: column; }
+    .mainPaginas .TitulosPaginas {
+      font-size: 3rem; }
+    .mainPaginas .ImgRecetas {
+      display: flex;
+      flex-direction: row;
+      padding: 10px; }
+      .mainPaginas .ImgRecetas .imgRecetas {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        border: #734d26 solid; }
+    .mainPaginas .Btn-primary {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .mainPaginas .Btn-primary .btn-primary {
+        height: 60px;
+        width: 100px;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 10px; } }
+
 /* RESPONSIVE INDEX*/
 @media only screen and (max-width: 768px) {
   .navImagenes {
     display: flex;
     flex-direction: row;
-    height: 170px;
-    width: 800px; }
+    width: 750px;
+    height: 200px; }
     .navImagenes img {
-      width: 120px;
-      height: 120px; }
+      width: 115px;
+      height: 115px; }
     .navImagenes .titulosComidas {
       font-size: 2.5rem; } }
 
 @media only screen and (max-width: 320px) {
   .video {
     height: 200px;
-    width: 250px; }
-  .navImagenes {
+    width: 300px;
+    margin-left: 90px; }
+  .ContenedorMain {
     display: flex;
     flex-direction: column;
-    padding: 35px; }
-    .navImagenes .ImagenesComidas {
-      width: 40px;
-      height: 40px; }
-  .TitulosB {
-    font-size: 2rem; } }
+    width: 320px; }
+    .ContenedorMain .Contenedor1 {
+      height: 250px;
+      width: 250px;
+      left: 20px; }
+    .ContenedorMain .Contenedor2 {
+      padding: 20px; }
+      .ContenedorMain .Contenedor2 .navImagenes {
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+        width: 450px; }
+        .ContenedorMain .Contenedor2 .navImagenes img {
+          height: 125px;
+          width: 125px; }
+      .ContenedorMain .Contenedor2 .ImagenesComidas {
+        width: 150px;
+        height: 150px; }
+    .ContenedorMain .TitulosB {
+      font-size: 3rem; } }
 
 /*Titulos*/
 .Titulos {
@@ -209,9 +263,6 @@ video {
 .TitulosB {
   color: black;
   font-size: 4.5rem; }
-
-h3 {
-  color: #eacda3; }
 
 .pTitulo {
   color: black; }
@@ -259,16 +310,16 @@ h1 {
 /* PAGINA NOSOTROS */
 .ContenedorNosotros {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 700px; }
 
-.PadreForm {
-  width: 400px;
-  font-size: 2rem; }
+.Formulario .col-auto {
+  height: 30px;
+  width: 150px;
+  padding-left: 10px; }
 
-.HijoForm {
-  height: 75px;
-  width: 350px;
-  padding: 15px; }
+.Formulario .form-check-label {
+  font-size: 1.5rem; }
 
 .MainNosotros {
   background: #eacda3;
@@ -281,7 +332,8 @@ h1 {
   width: 100%;
   padding: 20px; }
   .HijoNosotros p {
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-align: justify; }
 
 .FooterNosotros {
   background-color: #734d26;
@@ -289,6 +341,10 @@ h1 {
 
 .TituloRegistrarse {
   font-size: 2.5rem; }
+
+.Mapa {
+  height: 300px;
+  width: 400px; }
 
 /* PAGINA SALADAS */
 .mainPaginas {
@@ -316,8 +372,11 @@ h1 {
   justify-content: space-evenly; }
   .Btn-primary .btn-primary {
     width: 150px;
-    height: 60px;
+    height: 75px;
     padding: 10px; }
+
+.modal-body {
+  font-size: 2rem; }
 
 .NombresComidas {
   display: flex;
